@@ -17,6 +17,11 @@ public class Person {
     public Person(String newName, int newAge){//parameterized constructor, nondefault
         name = newName;
         age = newAge;
+        if (isVaildAge(newAge)){
+            age = newAge;
+        } else {
+            age = 42;
+        }
 
     }
 
