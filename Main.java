@@ -16,5 +16,9 @@ public class Main{
         System.out.println(one.getName()+" is "+one.getAge()+" years old.");
         System.out.println(two.getName()+" is "+two.getAge()+" years old.");
 
+        System.out.println("\nTesting Validator...");
+        one.setAge(-150);
+        System.out.println(one.getName()+" is "+one.getAge()+" years old.");
+    
     }
 }
