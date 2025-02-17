@@ -25,8 +25,8 @@ public class Person {
 
     }
 
-    public void setName(String newName) {
-        name = newName;
+    public void setName(String name) {
+        this.name = name; // this. is talking about that objects attributes
     }
     public String getName() {
         return name;
