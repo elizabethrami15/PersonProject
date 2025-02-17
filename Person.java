@@ -2,16 +2,12 @@ public class Person {
 
     private String name;   
     private int age;
-    private boolean isValidAge(int age){
-        if ((age>=0)&&(age<=120)){
-            return true;
-        } else{
-            return false;
-        }    
-    }
+    private static int population = 0;
+    
     public Person(){//default constructor
         name = "John Doe";
         age = 42;
+        population++;
 
     }
     public Person(String newName, int newAge){//parameterized constructor, nondefault
@@ -22,9 +18,20 @@ public class Person {
         } else {
             age = 42;
         }
-
+        population++;
+    }
+    static public int getPopulation(){
+        return population;
     }
 
+    private boolean isValidAge(int age){
+        if ((age>=0)&&(age<=120)){
+            return true;
+        } else{
+            return false;
+        }    
+    }
+    
     public void setName(String name) {
         this.name = name; // this. is talking about that objects attributes
     }
