@@ -16,5 +16,8 @@ public class Student extends Person {
   public void setGPA(double myGPA){
     gpa = myGPA;
   }
-  
+  @Override
+  public String toString(){
+    return "My name is "+getName()+" and i am"+getAge()+" years old.\nI have a GPA of "+gpa;
+  }
 }
